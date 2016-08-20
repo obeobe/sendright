@@ -1,0 +1,8 @@
+.idea/
+.vs/
+Installer/
+Installer2/
+SendRight_TemporaryKey.pfx
+ThirdParty/
+bin/
+obj/
