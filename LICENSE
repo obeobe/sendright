@@ -1,16 +1,20 @@
-MIT License
+License (based on MIT License)
 
-Copyright (c) 2016 obeobe
+Copyright (c) 2016 obe
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+to use, copy, modify, merge, publish, and/or distribute, and to permit persons
+to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+In addition to the above, permission is granted to use code excerpts from this
+software in commercial products, in the terms specified above. However,
+separate permission is required for this plugin or a substantial part of it
+to be sold as is or as part of another commercial product.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
