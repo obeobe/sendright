@@ -51,7 +51,7 @@ namespace SendRight {
 				List<string> lstDomains = new List<string>();
 				foreach (Outlook.Account account in accounts) {
 					string address = account.CurrentUser.Address;
-					string domain = this.getDomain(address);
+					string domain = Utils.getDomain(address);
 					if (lstDomains.Contains(domain)) continue;
 					lstDomains.Add(domain);
 				}
@@ -174,11 +174,6 @@ namespace SendRight {
 
 			//Cancel = true;
 			//MessageBox.Show("Cancelling send for debugging purposes...");
-		}
-
-		private string getDomain(string email) {
-			if (!email.Contains("@")) return email;
-			return email.Split("@".ToCharArray())[1];
 		}
 
 		#region VSTO generated code

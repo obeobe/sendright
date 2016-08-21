@@ -142,7 +142,7 @@ namespace SendRight {
 			if (!this.settings.getRules().getOnMultipleDomains().enabled) return false;
 			if (this.hasControlledDomainInRecipients(this.arrTO)) return false; // only apply when there is NO controlled domain in the TO line. if there is - testViolatesOnMixedTO() will detect it
 			if (this.isCoveredByException()) return false;
-			string[] arrNonControlled = this.arrNormalizedAll.Where(recipient => !this.isAtControlledDomain(recipient)).ToArray();
+			string[] arrNonControlled = this.arrNormalizedAll.Select(recipient => Utils.getDomain(recipient)).Distinct().ToArray();
 			if (arrNonControlled.Length <= 1) return false;
 			arrViolatingAddresses = arrNonControlled.Distinct().ToArray();
 			return true;

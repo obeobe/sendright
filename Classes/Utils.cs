@@ -232,5 +232,10 @@ namespace SendRight {
 		public static IEnumerable<string> toLower(this IEnumerable<string> ie) {
 			return ie.Select(item => item.ToLower());
 		}
+
+		public static string getDomain(string email) {
+			if (!email.Contains("@")) return email;
+			return email.Split("@".ToCharArray())[1];
+		}
 	}
 }
