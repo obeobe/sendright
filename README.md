@@ -56,7 +56,7 @@ stuff.
 Open the Settings popup or disable SendRight (until Outlook is
 restarted) from the SendRight ribbon:
 
-![Ribbon](/images/ribbon.png)
+![Ribbon](http://www.sendright.email/images/ribbon.png)
 
 
 ### First use
@@ -64,7 +64,7 @@ restarted) from the SendRight ribbon:
 The first time you start Outlook after running the installer, the
 SendRight settings window will pop up automatically:
 
-![Settings - Welcome](/images/settings/welcome.png)
+![Settings - Welcome](http://http://www.sendright.email/images/settings/welcome.png)
 
 Notice the checkbox at the bottom; if checked - SendRight will add
 a short line of text to the end of every new email you create. You will
@@ -81,7 +81,7 @@ company. When one or more of the recipients email addresses are at a
 Controlled Domain - SendRight will test the recipients list against the
 rules and alert if necessary.
 
-![Settings - Controlled Domains](/images/settings/controlledDomains.png)
+![Settings - Controlled Domains](http://http://www.sendright.email/images/settings/controlledDomains.png)
 
 For example, if you configure "mycompany.com" as your Controlled Domain,
 SendRight would alert if you send an email to "joe@mycompany.com" with
@@ -96,7 +96,7 @@ It is possible to have a list of domains be considered as a single
 domain by specifying them in the Controlled Domain(s) text box,
 separated by a comma:
 
-![Settings - Multiple Controlled Domains](/images/settings/controlledDomains.multiple.png)
+![Settings - Multiple Controlled Domains](http://http://www.sendright.email/images/settings/controlledDomains.multiple.png)
 
 This is useful if your company has multiple domains. For example, if you 
 set "mycompany.com" and "mycompany.biz" together, they will be treated
@@ -106,25 +106,25 @@ will not raise an alert.
 Suppose that you send an email to "joe@mycompany.com" and to
 "jane@anothercompany.com":
 
-![Email](/images/email1.png)
+![Email](http://http://www.sendright.email/images/email1.png)
 
 When you try to send it, you will get this alert:
 
-![Email](/images/email1.risks.png)
+![Email](http://http://www.sendright.email/images/email1.risks.png)
 
 If you click on SEND - the email will send, and an exception will be
 added for the relevant Controlled Domains so that in the future, emails
 sent to both "joe@mycompany.com" and "jane@anothercompany.com" will no
 longer trigger an alert:
 
-![Settings - Controlled Domains - Exception](/images/settings/controlledDomains.exception.png)
+![Settings - Controlled Domains - Exception](http://http://www.sendright.email/images/settings/controlledDomains.exception.png)
 
 
 ### Rules
 
 SendRight offers six different rules:
 
-![Settings - Rules](/images/settings/rules.png)
+![Settings - Rules](http://http://www.sendright.email/images/settings/rules.png)
 
 Each rule can be enabled or disabled and some of the rules have
 parameters that can be adjusted:
@@ -183,7 +183,7 @@ SendRight collects simple statistics of how many emails it reviewed,
 how many violated a rule, and how many times you decided to cancel the
 send after receiving the alert.
 
-![Settings - Statistics](/images/settings/statistics.png)
+![Settings - Statistics](http://http://www.sendright.email/images/settings/statistics.png)
 
 
 ### Export / Import
