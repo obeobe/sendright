@@ -51,7 +51,12 @@ your company domain by looking at your Outlook accounts and is ready
 to protect you without further configuration.
 
 However, it is possible to adjust the rules and do some other cool
-stuff. Let's see what.
+stuff.
+
+Open the Settings popup or disable SendRight (until Outlook is
+restarted) from the SendRight ribbon:
+
+![Ribbon](/images/ribbon.png)
 
 
 ### First use
