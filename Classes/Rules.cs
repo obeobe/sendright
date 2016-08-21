@@ -91,12 +91,7 @@ namespace SendRight {
 		private string denormalizeAddress(string normalizedAddress) {
 			if (!this.arrNormalizedAll.Contains(normalizedAddress)) return normalizedAddress;
 			string denormalized = null;
-			try {
-				denormalized = this.arrAll.Where(address => address.ToLower().Equals(normalizedAddress)).First();
-			}
-			catch (Exception ex) {
-				int a = 2;
-			}
+			denormalized = this.arrAll.Where(address => address.ToLower().Equals(normalizedAddress)).First();
 			return denormalized;
 		}
 
