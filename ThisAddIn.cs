@@ -171,6 +171,9 @@ namespace SendRight {
 				}
 			}
 
+
+			//Cancel = true;
+			//MessageBox.Show("Cancelling send for debugging purposes...");
 		}
 
 		private string getDomain(string email) {

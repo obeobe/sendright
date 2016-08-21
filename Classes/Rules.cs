@@ -36,7 +36,7 @@ namespace SendRight {
 		private string[] consolidate(string[] arr) {
 			string[] arrControlledDomains = this.controlledDomain.arrDomains.toLower().ToArray();
 			if (arrControlledDomains.Length <= 1) return arr;
-			string[] arrConsolidated = arrControlledDomains
+			string[] arrConsolidated = arr
 				.Select(s => (arrControlledDomains.Contains(s) ? arrControlledDomains[0] : s))
 				.Distinct()
 				.ToArray()
@@ -90,7 +90,14 @@ namespace SendRight {
 
 		private string denormalizeAddress(string normalizedAddress) {
 			if (!this.arrNormalizedAll.Contains(normalizedAddress)) return normalizedAddress;
-			return this.arrAll.Where(address => address.ToLower().Equals(normalizedAddress)).First();
+			string denormalized = null;
+			try {
+				denormalized = this.arrAll.Where(address => address.ToLower().Equals(normalizedAddress)).First();
+			}
+			catch (Exception ex) {
+				int a = 2;
+			}
+			return denormalized;
 		}
 
 		private string[] denormalizeAddresses(string[] arrNormalizedAddresses) {
