@@ -53,6 +53,8 @@ namespace SendRight {
 					string address = account.CurrentUser.Address;
 					string domain = Utils.getDomain(address);
 					if (lstDomains.Contains(domain)) continue;
+					string domainLC = domain.ToLower();
+					if (domainLC.Contains("gmail") || domainLC.Contains("hotmail") || domainLC.Contains("zoho")) continue;
 					lstDomains.Add(domain);
 				}
 
@@ -127,7 +129,7 @@ namespace SendRight {
 				}
 
 				if (rules.testViolatesOnMultipleDomains(ref arrViolatingAddresses)) {
-					lstRisks.Add(new Tuple<string, string, string>("Potentially wrong domains in TO", string.Join(", ", arrViolatingAddresses), "The TO line has no controlled domains, but it has two or more DIFFERENT domains."));
+					lstRisks.Add(new Tuple<string, string, string>("Potentially wrong domains mix", string.Join(", ", arrViolatingAddresses), "The TO line has no controlled domains, but the recipients include two or more DIFFERENT domains."));
 					mayAddException = true;
 				}
 
