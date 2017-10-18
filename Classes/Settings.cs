@@ -426,7 +426,7 @@ namespace SendRight {
 								</controlledDomain>
 							-->
 						</controlledDomains>
-						<promotion enabled=""true"">
+						<promotion enabled=""false"">
 							This email was reviewed by SendRight. SendRight is free and open source. http://www.sendright.email/
 						</promotion>
 						<rules>
